@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — JB SIP</title>
+<style>
+  :root { --brand: #0B57D0; --text: #1c1b1f; --muted: #5f6368; --line: #e3e3e3; --bg: #ffffff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  header { background: var(--brand); color: #fff; padding: 28px 20px; }
+  header .inner, main { max-width: 820px; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 1.6rem; }
+  header p { margin: 6px 0 0; opacity: .9; font-size: .95rem; }
+  main { padding: 28px 20px 64px; }
+  h2 { font-size: 1.15rem; margin: 34px 0 10px; }
+  h3 { font-size: 1rem; margin: 22px 0 6px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--brand); }
+  .meta { background: #f4f6fb; border-left: 4px solid var(--brand); padding: 14px 16px;
+          border-radius: 6px; font-size: .95rem; }
+  .lang { font-size: .9rem; margin: 0 0 18px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0; }
+  footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line);
+           margin-top: 40px; padding-top: 14px; }
+  code { background: #f1f1f1; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <h1>Política de Privacidade — JB SIP</h1>
+    <p>Aplicativo Android de VoIP (SIP) para centrais Asterisk/FreePBX</p>
+  </div>
+</header>
+
+<main>
+  <p class="lang"><a href="#pt">Português</a> · <a href="#en">English</a></p>
+
+  <section id="pt">
+    <div class="meta">
+      <strong>Vigência:</strong> 16 de novembro de 2026 ·
+      <strong>Versão do app:</strong> 1.0.12 ·
+      <strong>Pacote:</strong> <code>br.com.jb.voip</code>
+    </div>
+
+    <h2>1. Quem somos</h2>
+    <p>O <strong>JB SIP</strong> é um aplicativo de telefonia VoIP (softphone SIP)
+    desenvolvido de forma independente para uso com centrais telefônicas
+    Asterisk/FreePBX. O desenvolvedor não opera nenhum servidor de telefonia para
+    você: o app se conecta exclusivamente à central que você mesmo configura.</p>
+
+    <h2>2. Resumo</h2>
+    <ul>
+      <li>Não existe cadastro de usuário no app.</li>
+      <li>O desenvolvedor <strong>não coleta, não recebe e não armazena</strong>
+      dados seus. Não há analytics, rastreamento, anúncios ou relatórios de falha
+      enviados para nós.</li>
+      <li>Suas chamadas, mensagens e a sua conta SIP trafegam diretamente entre o
+      seu aparelho e a sua central Asterisk/FreePBX.</li>
+      <li>Tudo o que o app guarda fica no armazenamento privado do aparelho e é
+      apagado quando você desinstala o aplicativo.</li>
+    </ul>
+
+    <h2>3. Dados acessados pelo app (e por quê)</h2>
+    <ul>
+      <li><strong>Microfone</strong> — para transmitir sua voz durante as ligações.
+      O áudio não é gravado pelo app; ele é enviado em tempo real para a central
+      configurada. Se você usar a função de gravação de chamada, o arquivo é salvo
+      apenas no seu aparelho.</li>
+      <li><strong>Câmera</strong> — somente quando você inicia ou aceita uma
+      chamada de vídeo.</li>
+      <li><strong>Contatos</strong> — lidos localmente para mostrar nomes e
+      números na lista de contatos e permitir ligar ou enviar mensagem. Nada é
+      enviado ao desenvolvedor nem à central.</li>
+      <li><strong>Estado do telefone / número da linha</strong> — para identificar
+      o estado das chamadas, ajustar o roteamento de áudio e, opcionalmente,
+      sugerir seu número ao criar a conta SIP.</li>
+      <li><strong>Notificações</strong> — para avisar de chamadas e mensagens
+      recebidas e manter o registro ativo com o app em segundo plano.</li>
+      <li><strong>Armazenamento do app</strong> — configurações, credenciais da
+      conta SIP, histórico de chamadas e conversas ficam em área privada do
+      aplicativo.</li>
+    </ul>
+
+    <h2>4. O que o app não faz</h2>
+    <ul>
+      <li>Não cria conta em servidor do desenvolvedor.</li>
+      <li>Não envia dados de uso, diagnósticos ou falhas para o desenvolvedor, para
+      a Belledonne Communications nem para terceiros.</li>
+      <li>Não exibe anúncios e não usa SDKs de publicidade ou rastreamento.</li>
+      <li>Não acessa fotos, arquivos, SMS ou histórico de chamadas do sistema
+      além do necessário para as funções descritas acima.</li>
+      <li>Não vende nem compartilha dados pessoais.</li>
+    </ul>
+
+    <h2>5. Para onde vão os dados das chamadas</h2>
+    <p>O app envia o tráfego SIP (sinalização, áudio, vídeo e mensagens de texto)
+    diretamente para o servidor Asterisk/FreePBX que <strong>você</strong>
+    informar no cadastro da conta. O responsável por essa central — que pode ser
+    você, sua empresa ou um provedor contratado por você — é quem administra os
+    registros e o tratamento desses dados, conforme a política de privacidade
+    dele. O desenvolvedor do JB SIP não tem acesso a esse servidor.</p>
+    <p>Dependendo da configuração da sua central, a sinalização e a mídia podem
+    trafegar sem criptografia (UDP/RTP). Se isso for uma preocupação, habilite TLS
+    e SRTP na sua central e no app.</p>
+
+    <h2>6. Permissões do Android</h2>
+    <ul>
+      <li>Microfone e câmera: apenas durante chamadas.</li>
+      <li>Contatos: para exibir e discar para seus contatos.</li>
+      <li>Notificações: chamadas e mensagens.</li>
+      <li>Rede e execução em segundo plano: para manter o registro SIP ativo e
+      receber chamadas com o app fechado.</li>
+    </ul>
+    <p>Você pode revogar qualquer permissão nas configurações do Android; sem
+    algumas delas o app deixa de funcionar corretamente.</p>
+
+    <h2>7. Segurança</h2>
+    <p>As credenciais da conta SIP ficam no armazenamento privado do aplicativo,
+    protegido pelo sandbox do Android. Recomendamos usar senhas exclusivas para a
+    extensão e manter o aparelho com bloqueio de tela.</p>
+
+    <h2>8. Retenção e exclusão</h2>
+    <p>O app não mantém dados em servidores do desenvolvedor, então não há nada
+    para excluir do nosso lado. Para apagar dados locais (conta, histórico e
+    conversas), desinstale o aplicativo ou limpe os dados em
+    <em>Configurações do Android → Apps → JB SIP → Armazenamento</em>.</p>
+
+    <h2>9. Seus direitos (LGPD)</h2>
+    <p>Como o desenvolvedor não trata dados pessoais seus, pedidos de acesso,
+    correção ou exclusão relativos a chamadas devem ser dirigidos ao operador da
+    central Asterisk/FreePBX utilizada. Ainda assim, você pode nos procurar pelo
+    canal da seção 12 para qualquer dúvida sobre o aplicativo.</p>
+
+    <h2>10. Crianças e adolescentes</h2>
+    <p>O JB SIP é destinado a uso profissional e a maiores de 18 anos. Não é
+    direcionado a crianças e não coleta intencionalmente dados de menores.</p>
+
+    <h2>11. Alterações desta política</h2>
+    <p>Se o app passar a tratar dados de forma diferente, esta página será
+    atualizada e a data de vigência acima será alterada. A versão publicada aqui é
+    sempre a válida.</p>
+
+    <h2>12. Contato</h2>
+    <p>Dúvidas sobre esta política podem ser enviadas pelo e-mail de contato do
+    desenvolvedor exibido na ficha do aplicativo na Google Play ou por uma issue em
+    <a href="https://github.com/joandson19/jb-sip/issues">github.com/joandson19/jb-sip/issues</a>.</p>
+
+    <h2>13. Código-fonte e licença</h2>
+    <p>O JB SIP é software livre distribuído sob a GNU General Public License v3.0,
+    derivado do projeto <code>linphone-android</code> (Copyright © Belledonne
+    Communications). O código-fonte correspondente a cada versão publicada está em
+    <a href="https://github.com/joandson19/jb-sip">github.com/joandson19/jb-sip</a>.</p>
+  </section>
+
+  <hr>
+
+  <section id="en">
+    <h1 style="font-size:1.35rem">Privacy Policy — JB SIP</h1>
+    <div class="meta">
+      <strong>Effective date:</strong> November 16, 2026 ·
+      <strong>App version:</strong> 1.0.12 ·
+      <strong>Package:</strong> <code>br.com.jb.voip</code>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p><strong>JB SIP</strong> is an independently developed VoIP (SIP softphone)
+    app for Asterisk/FreePBX phone systems. The developer does not operate any
+    phone server for you: the app connects only to the PBX that you configure
+    yourself.</p>
+
+    <h2>2. Summary</h2>
+    <ul>
+      <li>There is no user account with the developer.</li>
+      <li>The developer <strong>does not collect, receive or store</strong> your
+      data. There is no analytics, tracking, advertising or crash reporting sent to
+      us.</li>
+      <li>Your calls, messages and SIP account go directly between your device and
+      your Asterisk/FreePBX server.</li>
+      <li>Everything the app stores stays in the device's private storage and is
+      removed when you uninstall the app.</li>
+    </ul>
+
+    <h2>3. Data the app accesses</h2>
+    <ul>
+      <li><strong>Microphone</strong> — to send your voice during calls. Audio is
+      not recorded by the app; it is streamed in real time to your configured PBX.
+      If you use call recording, the file is saved only on your device.</li>
+      <li><strong>Camera</strong> — only when you start or accept a video call.</li>
+      <li><strong>Contacts</strong> — read locally to show names and numbers and to
+      let you call or message them. Nothing is sent to the developer or the
+      PBX.</li>
+      <li><strong>Phone state / line number</strong> — to detect call state, adjust
+      audio routing and optionally pre-fill your number when creating the SIP
+      account.</li>
+      <li><strong>Notifications</strong> — to alert you about incoming calls and
+      messages and to keep SIP registration alive in the background.</li>
+      <li><strong>App storage</strong> — settings, SIP credentials, call history and
+      conversations are kept in the app's private area.</li>
+    </ul>
+
+    <h2>4. What the app does not do</h2>
+    <ul>
+      <li>It does not create an account on any developer server.</li>
+      <li>It does not send usage data, diagnostics or crashes to the developer, to
+      Belledonne Communications or to third parties.</li>
+      <li>It shows no ads and uses no advertising or tracking SDKs.</li>
+      <li>It does not access photos, files, SMS or system call logs beyond what the
+      features above require.</li>
+      <li>It does not sell or share personal data.</li>
+    </ul>
+
+    <h2>5. Where call data goes</h2>
+    <p>The app sends SIP traffic (signaling, audio, video and text messages)
+    directly to the Asterisk/FreePBX server that <strong>you</strong> enter when
+    setting up the account. The operator of that PBX — you, your company or a
+    provider you hired — manages those records and their processing under their own
+    privacy policy. The JB SIP developer has no access to that server.</p>
+    <p>Depending on your PBX configuration, signaling and media may be unencrypted
+    (UDP/RTP). If that matters to you, enable TLS and SRTP on your PBX and in the
+    app.</p>
+
+    <h2>6. Android permissions</h2>
+    <ul>
+      <li>Microphone and camera: only during calls.</li>
+      <li>Contacts: to display and call your contacts.</li>
+      <li>Notifications: calls and messages.</li>
+      <li>Network and background execution: to keep SIP registration alive and
+      receive calls with the app closed.</li>
+    </ul>
+    <p>You can revoke any permission in Android settings; without some of them the
+    app will not work properly.</p>
+
+    <h2>7. Security</h2>
+    <p>SIP credentials are stored in the app's private storage, protected by the
+    Android sandbox. We recommend a unique password for the extension and a screen
+    lock on the device.</p>
+
+    <h2>8. Retention and deletion</h2>
+    <p>The app keeps no data on developer servers, so there is nothing to delete on
+    our side. To erase local data (account, history and conversations), uninstall
+    the app or clear its data in <em>Android Settings → Apps → JB SIP →
+    Storage</em>.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Because the developer does not process your personal data, requests about
+    call records must be addressed to the operator of the Asterisk/FreePBX server in
+    use. You may still contact us through section 12 for any question about the
+    app.</p>
+
+    <h2>10. Children</h2>
+    <p>JB SIP is intended for professional use by adults (18+). It is not directed
+    to children and does not intentionally collect data from minors.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>If the app starts handling data differently, this page will be updated and
+    the effective date above will change. The version published here is always the
+    valid one.</p>
+
+    <h2>12. Contact</h2>
+    <p>Questions about this policy can be sent to the developer contact e-mail
+    shown on the Google Play listing or as an issue at
+    <a href="https://github.com/joandson19/jb-sip/issues">github.com/joandson19/jb-sip/issues</a>.</p>
+
+    <h2>13. Source code and license</h2>
+    <p>JB SIP is free software under the GNU General Public License v3.0, derived
+    from <code>linphone-android</code> (Copyright © Belledonne Communications). The
+    source code for every published version is at
+    <a href="https://github.com/joandson19/jb-sip">github.com/joandson19/jb-sip</a>.</p>
+  </section>
+
+  <footer>JB SIP · br.com.jb.voip · GPLv3</footer>
+</main>
+</body>
+</html>

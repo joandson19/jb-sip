@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+app/debug/
+app/release/
+.idea/
+app/bc-android.keystore
+.kotlin/
+
+# nosso fork: segredos e push local
+google-services.json
+google-services.json.*
+keystore.properties
+*.jks
+*.keystore

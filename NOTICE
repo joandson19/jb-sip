@@ -1,0 +1,49 @@
+JB SIP
+======
+
+This distribution is the Android application "JB SIP" (applicationId
+br.com.jb.voip), a softphone for private SIP servers (Asterisk/FreePBX).
+
+It is a modified version (derivative work) of the open source project
+"linphone-android", Copyright (c) 2010-2026 Belledonne Communications SARL,
+licensed under the GNU General Public License version 3 (GPLv3).
+See LICENSE.txt for the full license text.
+
+Modifications
+-------------
+
+The source code in this repository was modified in 2026 to:
+
+* rebrand the application as "JB SIP" (application name, launcher icon,
+  splash screen, colors and notification icon);
+* point the default configuration to a private SIP account instead of the
+  Linphone SIP service, and remove Linphone service endpoints, STUN servers,
+  log upload and update check URLs;
+* disable the Linphone account creation/login flow and the assistant paths
+  that lead to it;
+* disable group chats, meetings and conferences, keeping 1-to-1 SIP MESSAGE
+  text chat only;
+* remove all ways to send or receive media/attachments in the chat;
+* clean the Help/Troubleshooting screens of Linphone-specific entries;
+* harden the background keep-alive (START_STICKY service, restart on boot,
+  battery optimization/autostart guidance) and
+* remove Linphone-specific URI schemes and media share intent filters.
+
+Original copyright notices and the GPLv3 license headers were kept in every
+source file, as required by the license.
+
+Trademarks and affiliation
+--------------------------
+
+JB SIP is an independent project. It is not affiliated with, sponsored,
+endorsed or certified by Belledonne Communications SARL. "Linphone" and the
+Linphone logo are trademarks of their respective owners and are not used to
+identify this application.
+
+Source code
+-----------
+
+JB SIP is distributed under the GPLv3, therefore the complete corresponding
+source code is made available to every user who receives the application.
+The public repository address is published with the application listing and
+inside the app (Help > About > Source code).
