@@ -1,0 +1,80 @@
+/*
+ * Copyright (c) 2010-2023 Belledonne Communications SARL.
+ *
+ * This file is part of linphone-android
+ * (see https://www.linphone.org).
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+package org.linphone.ui.main.chat.view
+
+import android.content.Context
+import android.util.AttributeSet
+import android.view.KeyEvent
+import androidx.appcompat.widget.AppCompatEditText
+
+/**
+ * Allows for image input inside an EditText, usefull for keyboards with gif support for example.
+ */
+class RichEditText : AppCompatEditText {
+    companion object {
+        private const val TAG = "[Rich Edit Text]"
+    }
+
+    private var controlPressed = false
+
+    private var sendListener: RichEditTextSendListener? = null
+
+    constructor(context: Context) : super(context) {
+        initReceiveContentListener()
+    }
+
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+        initReceiveContentListener()
+    }
+
+    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    ) {
+        initReceiveContentListener()
+    }
+
+    fun setControlEnterListener(listener: RichEditTextSendListener) {
+        sendListener = listener
+    }
+
+    private fun initReceiveContentListener() {
+        setOnKeyListener { _, keyCode, event ->
+            if (keyCode == KeyEvent.KEYCODE_CTRL_LEFT) {
+                if (event.action == KeyEvent.ACTION_DOWN) {
+                    controlPressed = true
+                } else if (event.action == KeyEvent.ACTION_UP) {
+                    controlPressed = false
+                }
+                false
+            } else if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_UP && controlPressed) {
+                sendListener?.onControlEnterPressedAndReleased()
+                true
+            } else {
+                false
+            }
+        }
+    }
+
+    interface RichEditTextSendListener {
+        fun onControlEnterPressedAndReleased()
+    }
+}

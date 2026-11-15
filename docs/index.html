@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JB SIP — VoIP para Asterisk/FreePBX</title>
+<style>
+  :root { --brand: #0B57D0; --text: #1c1b1f; --muted: #5f6368; --line: #e3e3e3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--text); font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  header { background: var(--brand); color: #fff; padding: 48px 20px; text-align: center; }
+  header h1 { margin: 0 0 8px; font-size: 2rem; }
+  header p { margin: 0; opacity: .92; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h2 { font-size: 1.15rem; margin-top: 32px; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  a { color: var(--brand); }
+  .cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 24px; }
+  .card { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; text-decoration: none; color: inherit; }
+  .card strong { display: block; margin-bottom: 4px; color: var(--brand); }
+  .card span { color: var(--muted); font-size: .92rem; }
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 14px;
+           color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>JB SIP</h1>
+  <p>Softphone SIP para centrais Asterisk / FreePBX</p>
+</header>
+
+<main>
+  <p>Aplicativo Android de VoIP com chamadas de áudio e vídeo e mensagens de texto
+  por <strong>SIP MESSAGE</strong>, feito para uso com a sua própria central.</p>
+
+  <h2>Recursos</h2>
+  <ul>
+    <li>Registro SIP (UDP/TCP/TLS) na sua central, com uma ou várias contas</li>
+    <li>Chamadas de áudio e vídeo, transferência, espera e histórico</li>
+    <li>Conferência e mensagens de texto 1‑1 por SIP MESSAGE</li>
+    <li>Discagem exatamente como foi digitada — quem normaliza o número é o
+    dialplan da central</li>
+    <li>Serviço em primeiro plano e reinício no boot para continuar recebendo
+    chamadas com o app fechado</li>
+  </ul>
+
+  <div class="cards">
+    <a class="card" href="https://github.com/joandson19/jb-sip/releases">
+      <strong>Baixar o APK</strong>
+      <span>Versões assinadas, com SHA‑256 na descrição de cada Release</span>
+    </a>
+    <a class="card" href="privacy-policy.html">
+      <strong>Política de privacidade</strong>
+      <span>Português e inglês</span>
+    </a>
+    <a class="card" href="https://github.com/joandson19/jb-sip">
+      <strong>Código-fonte</strong>
+      <span>GPLv3 — derivado do linphone-android</span>
+    </a>
+    <a class="card" href="https://github.com/joandson19/jb-sip/issues">
+      <strong>Suporte</strong>
+      <span>Abra uma issue com dúvidas e problemas</span>
+    </a>
+  </div>
+
+  <footer>JB SIP · <code>br.com.jb.voip</code> · GNU General Public License v3.0 ·
+  Copyright © Belledonne Communications (obra derivada do linphone-android)</footer>
+</main>
+</body>
+</html>
