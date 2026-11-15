@@ -1,0 +1,1 @@
+Chamadas de voz, vídeo e mensagens de texto via SIP na sua central Asterisk/FreePBX.

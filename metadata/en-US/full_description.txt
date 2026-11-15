@@ -1,0 +1,15 @@
+JB SIP é um softphone SIP para uso com a sua própria central telefônica (Asterisk, FreePBX ou qualquer servidor SIP compatível).
+
+Recursos:
+* chamadas de voz e vídeo em alta definição
+* mensagens de texto via SIP MESSAGE (somente texto)
+* cadastro simples de ramal: informe usuário, senha e servidor SIP
+* histórico de chamadas, agenda de contatos e notificações de chamadas recebidas
+* suporte a codecs e transporte configuráveis (UDP, TCP, TLS)
+* tema claro e escuro
+
+O aplicativo não cria contas e não vende créditos: ele se conecta à central SIP que você já utiliza. Não é possível enviar fotos, arquivos, áudios ou vídeos pelo chat; a comunicação é exclusivamente SIP (voz, vídeo e texto).
+
+Para receber chamadas com o aplicativo em segundo plano, permita que ele funcione sem restrições de bateria e ative a inicialização automática nas configurações do Android.
+
+Aviso de licença: este aplicativo é baseado no projeto de código aberto Linphone, de Belledonne Communications, licenciado sob a GNU General Public License v3 (GPLv3). O código-fonte correspondente está publicado em https://github.com/joandson19/jb-sip. JB SIP não é afiliado, patrocinado ou endossado pela Belledonne Communications, e "Linphone" é marca de seus respectivos proprietários.
